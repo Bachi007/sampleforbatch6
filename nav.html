@@ -1,0 +1,84 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    label {
+        display: block;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 720px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .card-img {
+            width: 200px;
+            margin: 0 auto;
+        }
+        label{
+            margin-left:-150px;
+        }
+    }
+</style>
+<title>Responsive Card Layout</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+        <div class="card">
+            <img src="msd.jpg" alt="M S Dhoni" class="card-img">
+            <label>M S Dhoni</label>
+        </div>
+    </div>
+
+</body>
+</html>

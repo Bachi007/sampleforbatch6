@@ -1,0 +1,47 @@
+-- Step 1: Create the employee table
+CREATE TABLE employee (
+    empid INT PRIMARY KEY,
+    empname VARCHAR(50),
+    emplocation VARCHAR(50),
+    empproject VARCHAR(50),
+    empsalary INT
+);
+
+-- Step 2: Insert 10 different employees
+INSERT INTO employee (empid, empname, emplocation, empproject, empsalary) VALUES
+(1, 'John Doe', 'Hyderabad', 'Project A', 60000),
+(2, 'Alice Smith', 'Bangalore', 'Project B', 65000),
+(3, 'Bob Johnson', 'Chennai', 'Project C', 62000),
+(4, 'Eve Davis', 'Pune', 'Project D', 63000),
+(5, 'Mike Brown', 'Mumbai', 'Project E', 64000),
+(6, 'Sara Wilson', 'Gurgaon', 'Project F', 66000),
+(7, 'Raj Kumar', 'Hyderabad', 'Project G', 62000),
+(8, 'Anita Patel', 'Bangalore', 'Project H', 67000),
+(9, 'Suresh Reddy', 'Chennai', 'Project I', 61000),
+(10, 'Lakshmi Menon', 'Pune', 'Project J', 63000);
+
+
+-- Step 1: Create the bike table
+CREATE TABLE bike (
+    bikeid INT PRIMARY KEY AUTO_INCREMENT,
+    bikename VARCHAR(50),
+    bikecolor VARCHAR(30),
+    bikeprice INT,
+    bikemileage DECIMAL(5, 2),
+    bikecompany VARCHAR(50)
+);
+
+-- Step 2: Insert 12 different bikes
+INSERT INTO bike (bikename, bikecolor, bikeprice, bikemileage, bikecompany) VALUES
+('Yamaha R15', 'Blue', 150000, 40.00, 'Yamaha'),
+('Honda CBR', 'Red', 200000, 35.00, 'Honda'),
+('Bajaj Pulsar', 'Black', 120000, 45.00, 'Bajaj'),
+('TVS Apache', 'White', 110000, 38.00, 'TVS'),
+('KTM Duke', 'Orange', 250000, 30.00, 'KTM'),
+('Royal Enfield', 'Green', 180000, 25.00, 'Royal Enfield'),
+('Suzuki Gixxer', 'Blue', 140000, 40.00, 'Suzuki'),
+('Hero Splendor', 'Black', 70000, 60.00, 'Hero'),
+('Honda Activa', 'White', 80000, 50.00, 'Honda'),
+('Bajaj Dominar', 'Red', 160000, 35.00, 'Bajaj'),
+('TVS Jupiter', 'Brown', 75000, 55.00, 'TVS'),
+('Kawasaki Ninja', 'Green', 300000, 20.00, 'Kawasaki');
